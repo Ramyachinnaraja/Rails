@@ -1,0 +1,9 @@
+<%= @list %>
+<% @books.each do |book| %>
+<div>
+	<%= book.title %><br>
+  	<%= book.price %><br>
+  	<%= book.description %>
+</div>
+<br>
+  	<% end %>
