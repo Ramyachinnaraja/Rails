@@ -10,13 +10,14 @@ class ArticlesController < ApplicationController
   def new
     @article = Article.new
   end
-
+ 
   def edit
     @article = Article.find(params[:id])
   end
  
   def create
     @article = Article.new(article_params)
+ 
     if @article.save
       redirect_to @article
     else
@@ -46,3 +47,11 @@ class ArticlesController < ApplicationController
       params.require(:article).permit(:title, :text)
     end
 end
+
+
+
+
+
+
+
+
