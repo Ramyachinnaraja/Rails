@@ -7,10 +7,12 @@ ruby '2.7.3'
 gem 'rails', '~> 5.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
-# Use email_validator to validate email addresses
-gem 'email_validator'  
-# Use Truemail to validate email addresses
-gem 'truemail'
+
+#Add bootstrap
+gem 'bootstrap', '~>4.0.0'
+#Add JQuery-rails
+gem 'jquery-rails'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
