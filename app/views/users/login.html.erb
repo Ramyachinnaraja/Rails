@@ -1,0 +1,25 @@
+<style>
+.flash-error {
+	color:  red;
+}
+</style>
+
+<%= form_tag '/authenticate', method: "post" do %>
+<div class="flash-error"><%= flash[:notice] if flash[:notice] %></div>
+<h3>Login Page</h3>
+	<div>
+		<%= label_tag :Email_id %> 
+		<%= text_field_tag :email_id %> 		
+	</div>
+
+	<div>
+		<%= label_tag :password %> 
+		<%= password_field_tag :password %> 
+	</div>
+
+	<div>
+		<%= submit_tag "Login" %>		
+	</div>
+
+<% end %> 
+	 
