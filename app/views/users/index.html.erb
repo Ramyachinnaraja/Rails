@@ -1,0 +1,11 @@
+<style>
+.flash-index {
+	color:  green;
+}
+</style>
+
+<div class="flash-index"><%= flash[:notice] if flash[:notice] %></div>
+<% @users.each do |user|%>
+<div><%= user&.username %></div>
+<div><%= user&.email_id %></div>
+<% end%>

@@ -1,0 +1,33 @@
+
+<%= form_tag '/users', method: "post" do %>
+
+<h3>Sign Up</h3>
+
+<% if @user&.errors&.any? %>
+errors
+<% end %>
+
+<div>
+	<div>
+		<%= label_tag :Username %> 
+		<%= text_field_tag :username %> <br>
+	</div>
+
+	<div>
+		<%= label_tag :Email_id %>
+		<%= text_field_tag :email_id %><br> 		
+	</div>
+
+	<div>
+		<%= label_tag :password %> 
+		<%= password_field_tag :password %> 
+	</div>
+
+	<div>
+		<%= submit_tag "SignUp" %>
+	</div>
+
+</div>
+
+<% end %> 
+
